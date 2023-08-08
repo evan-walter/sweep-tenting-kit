@@ -1,23 +1,23 @@
 // Units are in centimeters.
 
-face_width = 10;
-face_depth = 11;
-face_height = 0.6;
+FACE_WIDTH = 10;
+FACE_DEPTH = 11;
+FACE_HEIGHT = 0.6;
 
-face_border_width = 1.5;
-face_border_depth = face_border_width;
+FACE_BORDER_WIDTH = 1.5;
+FACE_BORDER_DEPTH = FACE_BORDER_WIDTH;
 
-bars_depth = face_depth - (face_border_depth * 2);
-bars_width = face_width - (face_border_width * 2);
-bar_width = bars_width;
-bar_depth = 1;
+BARS_DEPTH = FACE_DEPTH - (FACE_BORDER_DEPTH * 2);
+BARS_WIDTH = FACE_WIDTH - (FACE_BORDER_WIDTH * 2);
+BAR_WIDTH = BARS_WIDTH;
+BAR_DEPTH = 1;
 
-bar_gap = 0.4;
+BAR_GAP = 0.4;
 
-support_width = bars_width;
-support_height = 0.2;
+SUPPORT_WIDTH = BARS_WIDTH;
+SUPPORT_HEIGHT = 0.2;
 
-jagged_edge_width_offset = 1;
-jagged_edge_width = bar_width - jagged_edge_width_offset;
-jagged_edge_depth = 0.3;
+JAGGED_EDGE_WIDTH_OFFSET = 1;
+JAGGED_EDGE_WIDTH = BAR_WIDTH - JAGGED_EDGE_WIDTH_OFFSET;
+JAGGED_EDGE_DEPTH = 0.3;
 
