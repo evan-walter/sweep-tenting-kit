@@ -5,14 +5,14 @@ module support_body (dynamic_support_depth) {
 }
 
 module jagged_edge () {
-    cube([bar_width - jagged_edge_offset, jagged_edge_depth, support_height]);
+    cube([jagged_edge_width, jagged_edge_depth, support_height]);
 }
 
 module support (dynamic_support_depth) {
-    union (dynamic_support_depth) {
-        translate([0.5, 0, 0]) jagged_edge();
+    union () {
+        translate([jagged_edge_width_offset / 2, 0, 0]) jagged_edge();
         translate([0, jagged_edge_depth, 0]) support_body(dynamic_support_depth);
-        translate([0.5, dynamic_support_depth + jagged_edge_depth, 0]) jagged_edge();
+        translate([jagged_edge_width_offset / 2, dynamic_support_depth + jagged_edge_depth, 0]) jagged_edge();
     };
 }
 

@@ -17,6 +17,7 @@ bar_gap = 0.4;
 support_width = bars_width;
 support_height = 0.2;
 
+jagged_edge_width_offset = 1;
+jagged_edge_width = bar_width - jagged_edge_width_offset;
 jagged_edge_depth = 0.3;
-jagged_edge_offset = 1;
 
