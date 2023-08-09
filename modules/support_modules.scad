@@ -1,4 +1,4 @@
-include <global_variables.scad>
+include <../global_variables.scad>
 
 module support_body (dynamic_support_depth) {
     cube([SUPPORT_WIDTH, dynamic_support_depth, SUPPORT_HEIGHT]);
