@@ -1,2 +1,4 @@
-cube([25,35,55]);
+include <../modules/bars_modules.scad>
+
+bars();
 
